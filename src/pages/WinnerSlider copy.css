@@ -1,0 +1,139 @@
+.winner-cards {
+    display: flex;
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
+    margin-top: 20px;
+}
+
+.winner-cards1 {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
+    margin-top: 20px;
+}
+
+
+
+.lines-button1.btn-play:hover {
+    background: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(135deg,
+            #fe964d,
+            #ffbe56 12.5%,
+            #fe964d 12.5%,
+            #ffbe56 25%,
+            #fe964d 25%,
+            #ffbe56 37.5%,
+            #fe964d 37.5%,
+            #ffbe56 50%,
+            #fe964d 50%,
+            #ffbe56 62.5%,
+            #fe964d 62.5%,
+            #ffbe56 75%,
+            #fe964d 75%,
+            #ffbe56 87.5%,
+            #fe964d 87.5%,
+            #ffbe56 100%);
+    animation: slidebg 3s linear infinite reverse;
+    color: #ffff;
+    cursor: pointer;
+}
+
+
+
+.game-cards {
+    display: flex;
+    cursor: grab;
+    user-select: none;
+}
+
+.game-cards button {
+    display: none;
+}
+
+.game-cards:hover button {
+    display: block;
+}
+
+.winner-cards:active {
+    cursor: grabbing;
+}
+
+.winner-cards1:active {
+    cursor: grabbing;
+}
+
+.game-cards:active {
+    cursor: grabbing;
+}
+
+.winner-card {
+    min-width: 250px;
+    margin: 0 10px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.winner-img img,
+.win-asset img {
+    max-width: 100%;
+    display: block;
+}
+
+.game-card {
+    width: 180px;
+    height: 233px;
+    border-radius: 20px;
+}
+
+.game-card img {
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    object-fit: contain;
+}
+
+.game-cards button {
+    position: absolute;
+    z-index: 10000;
+}
+
+.game-card:hover {
+    filter: blur(5px);
+}
+
+.game-cards:hover button {
+    background-image: linear-gradient(135deg,
+            #fe964d,
+            #ffbe56 12.5%,
+            #fe964d 12.5%,
+            #ffbe56 25%,
+            #fe964d 25%,
+            #ffbe56 37.5%,
+            #fe964d 37.5%,
+            #ffbe56 50%,
+            #fe964d 50%,
+            #ffbe56 62.5%,
+            #fe964d 62.5%,
+            #ffbe56 75%,
+            #fe964d 75%,
+            #ffbe56 87.5%,
+            #fe964d 87.5%,
+            #ffbe56 100%);
+    animation: slidebg 3s linear infinite reverse;
+    color: #ffff
+}
+
+.btn-play {
+    position: absolute;
+    z-index: 99999;
+}
+
+.btn-play:hover+.game-card,
+.btn-play:focus+.game-cards {
+    filter: blur(5px);
+
+}

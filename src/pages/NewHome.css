@@ -1,0 +1,57 @@
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .pc {
+        display: none !important;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .referText {
+        margin-top: -9px;
+        font-size: 10px;
+        margin-left: -38px;
+    }
+
+    .referContent {
+        margin-top: -63px;
+        font-size: 8px;
+        margin-left: 10px;
+
+    }
+
+    .banner-btn {
+        margin-top: 19px;
+        margin-left: -5px;
+        font-size: 10px;
+        width: 65px;
+        height: 18px;
+        padding: 0;
+
+    }
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .pc {
+        display: none !important;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .pc {
+        display: none !important;
+    }
+
+    .mobile {
+        display: block;
+    }
+}

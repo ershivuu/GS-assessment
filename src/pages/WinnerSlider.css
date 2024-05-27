@@ -1,0 +1,127 @@
+.winner-cards {
+    display: flex;
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
+    margin-top: 20px;
+}
+
+.winner-cards1 {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
+    margin-top: 20px;
+}
+.winner-card {
+    min-width: 250px;
+    margin: 0 10px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.winner-img img,
+.win-asset img {
+    max-width: 100%;
+    display: block;
+}
+.winner-cards:active {
+    cursor: grabbing;
+}
+
+.winner-cards1:active {
+    cursor: grabbing;
+}
+
+
+
+.game-cards {
+    position: relative;
+    display: flex;
+    cursor: grab;
+    user-select: none;
+    margin: 8px; /* Adjust as needed */
+}
+
+.game-card {
+    width: 180px;
+    height: 233px;
+    border-radius: 20px;
+    transition: filter 0.3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+}
+
+.lines-button1 {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 29.45px;
+    display: none;
+    background-image: linear-gradient(135deg, #fe964d, #ffbe56 12.5%, #fe964d 12.5%, #ffbe56 25%, #fe964d 25%, #ffbe56 37.5%, #fe964d 37.5%, #ffbe56 50%, #fe964d 50%, #ffbe56 62.5%, #fe964d 62.5%, #ffbe56 75%, #fe964d 75%, #ffbe56 87.5%, #fe964d 87.5%, #ffbe56 100%);
+    animation: slidebg 3s linear infinite reverse;
+}
+
+.game-cards:hover .lines-button1 {
+    display: block;
+}
+
+.game-cards:hover .game-card {
+    filter: blur(2px);
+}
+.game-cards:hover .game-card::before {
+    background: linear-gradient(180deg, #FFD958 -30.88%, #FF964E 83.82%);
+}
+.lines-button1:hover {
+    border-radius: 29.45px;
+    background-image: linear-gradient(135deg,
+            #fe964d,
+            #ffbe56 12.5%,
+            #fe964d 12.5%,
+            #ffbe56 25%,
+            #fe964d 25%,
+            #ffbe56 37.5%,
+            #fe964d 37.5%,
+            #ffbe56 50%,
+            #fe964d 50%,
+            #ffbe56 62.5%,
+            #fe964d 62.5%,
+            #ffbe56 75%,
+            #fe964d 75%,
+            #ffbe56 87.5%,
+            #fe964d 87.5%,
+            #ffbe56 100%);
+    animation: slidebg 3s linear infinite reverse;
+    color: #ffff
+    
+}
+@keyframes slidebg {
+    to {
+        background-position: 20vw;
+    }
+}
+
+
+@keyframes lines-animation {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.btn-play{
+margin-top:-10px;
+margin-left: 0px;
+}

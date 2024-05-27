@@ -85,10 +85,10 @@ export default function Home() {
     const StyledTextField = styled(TextField)({
         '& .MuiInputBase-input::placeholder': {
             color: '#636366',
-            opacity: 1, // to ensure the color is applied correctly
+            opacity: 1, 
         },
         '& .MuiOutlinedInput-root': {
-            color: '#636366', // text color inside the input field
+            color: '#636366',
         },
     });
 
